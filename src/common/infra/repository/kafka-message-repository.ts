@@ -6,7 +6,6 @@ export default class KafkaMessageRepositorySQL
   implements KafkaMessageRepository
 {
   async send(message: string, date: Date): Promise<KafkaMessage> {
-    return;
-    //await database.none("insert into example.parked_car (code, plate, date) values ($1, $2, $3)", [code, plate, date]);
+    throw new Error('Method not implemented.');
   }
 }

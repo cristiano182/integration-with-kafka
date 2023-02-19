@@ -1,5 +1,5 @@
 import KafkaMessage from '../entity/kafka-message';
 
-export default interface KafkaMessageRepository {
-  send(message: string, date: Date): Promise<KafkaMessage>;
+export default abstract class KafkaMessageRepository {
+  abstract send(message: string, date: Date): Promise<KafkaMessage>;
 }
